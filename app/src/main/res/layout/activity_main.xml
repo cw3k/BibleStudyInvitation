@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.codewarrior928.biblestudyinvitation.MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#263238"
+        android:fontFamily="sans-serif"
+        android:padding="5dp"
+        android:text="Christians in Boston"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="36sp"
+        android:id="@+id/header"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/biblePhoto"
+            android:layout_width="match_parent"
+            android:scaleX="2.5"
+            android:scaleY="2.5"
+            android:padding="23dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bible3"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"/>
+
+        <ImageView
+            android:id="@+id/cibPhoto"
+            android:layout_width="match_parent"
+            android:scaleX="1.3"
+            android:scaleY="1.3"
+            android:padding="23dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/panera_2"
+            android:layout_alignParentTop="true" />
+
+        <TextView
+            android:id="@+id/textInvitation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cibPhoto"
+            android:fontFamily="sans-serif"
+            android:text="Let's Study the Bible"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/meetupWebsite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textInvitation"
+            android:fontFamily="sans-serif"
+            android:text="Join us: meetup.com/Boston-Bible-Study"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textWebsite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/meetupWebsite"
+            android:fontFamily="sans-serif"
+            android:text="website: christiansinboston.com"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>
